@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="overlay" id="overlay">
+      <div class="contact-us" id="contact-us">
+        <h1>Contact Us!</h1>
+      </div>
+
+      <div class="product-suggestion" id="product-suggestion">
+        <h1>Product Suggestion!</h1><br/>
+        <button class="switch-button" id="slide-left-button">Contact Us</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="contact-us" id="contact-us-info">
+        <h1>Product Suggestion</h1><br/>
+        <form id="product-suggestion-form">      
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Description of product desired" rows="5" required></textarea>
+          <button class="control-button in">Send</button>
+        </form>
+      </div>
+
+      <div class="product-suggestion" id="product-suggestion-info">
+        <h1>Contact Us</h1><br/>
+        <form id="contact-us-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email Address" required />
+
+          <div class="radio-form-group">
+            <label>Contact Reason</label>
+            <div class="radio-form mt-10">
+              <input type="radio" class="radio" name="contact-reason" id="order-question" value="order-question" checked>
+              <label>Order Question</label>
+            </div>
+
+            <div class="radio-form">
+              <input type="radio" class="radio" name="contact-reason" id="website-feedback" value="website-feedback">
+              <label>Website feedback</label>
+            </div>
+
+            <div class="radio-form">
+              <input type="radio" class="radio" name="contact-reason" id="trouble-finding-product" value="trouble-finding-product">
+              <label>Trouble finding product</label>
+            </div>
+          </div>
+
+          <textarea placeholder="Feedback" rows="5" required></textarea>
+          <button class="control-button up">Send</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script  src="./script.js"></script>
+
+</body>
+</html>
